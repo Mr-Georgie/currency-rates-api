@@ -22,14 +22,14 @@ app.get("/api/rates", (req, res, next) => {
     if (req.query.base == undefined){
         res.status(400).json({
             "results": {
-                "error": "Please specify the base (home) rate"
+                "error": "Please specify the base (home) rate e.g base=CZK"
             }
         })
     } // check if the base value is not given 
     else if (req.query.currency == undefined){
         res.status(400).json({
             "results": {
-                "error": "Please specify the currency/currencies"
+                "error": "Please specify the currency/currencies e.g currency=USD"
             }
         })
     }// if both value are given, assign then to the variables base and symbols respectively
