@@ -1,0 +1,23 @@
+// to test the rest api using the REST Client VSCode extension
+// use ### to seperate different requests
+
+
+// case 1: test for when the base and currency values are correctly supplied
+GET http://localhost:3000/api/rates?base=CZK&currency=EUR,GBP,USD
+
+
+// case 2: test for when only the base value is correctly supplied
+###
+GET http://localhost:3000/api/rates?base=CZK
+
+
+// case 3: test for when only the currency value is correctly supplied
+###
+GET http://localhost:3000/api/rates?currency=EUR,GBP,USD
+
+
+// case 4: test for unsupported values for both base and currency
+###
+GET http://localhost:3000/api/rates?base=abc&currency=EUR,GBP,USD
+###
+GET http://localhost:3000/api/rates?base=CZK&currency=abc,bcd,GBP
