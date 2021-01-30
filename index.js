@@ -12,8 +12,7 @@ app.use(Express.urlencoded({ extended: true }));
 const uri = "https://api.exchangeratesapi.io/latest"
 
 app.get("/", (req, res)=>{
-    res.send("Please go to /api/rates endpoint to use this API.");
-    res.send("Remember to use '?' before adding the parameters e.g /api/rates?base=CZK ");
+    res.send("Please go to /api/rates endpoint to use this API. Remember to use '?' before adding the parameters e.g /api/rates?base=CZK");
 })
 
 
