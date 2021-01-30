@@ -11,6 +11,10 @@ app.use(Express.urlencoded({ extended: true }));
 // the url for the exchange rate api
 const uri = "https://api.exchangeratesapi.io/latest"
 
+app.get("/", (req, res)=>{
+    res.send("Please go to /api/rates endpoint to use this API")
+})
+
 
 app.get("/api/rates", (req, res, next) => {
     
