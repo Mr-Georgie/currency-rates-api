@@ -8,6 +8,4 @@ A service integration to the Exchange Rates API exposing a RESTful endpoint. The
 
 * ``` npm install express ```
 
-* ``` npm install nodemon -g ```
-
 * ``` npm start ```

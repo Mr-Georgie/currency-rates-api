@@ -4,8 +4,8 @@
   "description": "Enye - Phase 1 Backend Assignment",
   "main": "index.js",
   "type": "module",
-  "config" : { 
-    "port" : "3000" 
+  "config": {
+    "port": "3000"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
