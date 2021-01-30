@@ -4,7 +4,7 @@ import app from "./index.js";
 const port = 3000;
 
 // listen for errors
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
     if (err) throw err
-    console.log("Server running on port: " + port)
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 })
