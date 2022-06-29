@@ -39,7 +39,7 @@ app.get("/api/rates", (req, res, next) => {
 
         // create a query string of the uri, base and currency provided
         const queryurl = {
-            url: uri + "?base=" + base.toUpperCase() + "&symbols=" + symbols.toUpperCase(),
+            url: uri + "?base=" + base.toUpperCase() + "&symbols=" + symbols.toUpperCase() + "&access_key=L6BTrneJEBYVF6mtvVstmNfDHhHC5eVM",
             json: true
         }
 
