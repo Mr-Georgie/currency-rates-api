@@ -1,5 +1,5 @@
 # Currency Rates API
-A Currency Rates API with Node/ExpressJs for the Enye - PHASE 1 Backend Assignment
+A Currency Rates API with Node/ExpressJs.
 
 ## Description
 A service integration to the Exchange Rates API exposing a RESTful endpoint. The endpoint will accept requests and returns a JSON object of the latest currency rates.
